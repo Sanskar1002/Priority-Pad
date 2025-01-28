@@ -21,8 +21,8 @@ app.use(
   })
 );
 
-app.use("/api/v1/user", userRouter);
-app.use("/api/v1/todo", todoRouter);
+app.use("/", userRouter);
+app.use("/", todoRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
