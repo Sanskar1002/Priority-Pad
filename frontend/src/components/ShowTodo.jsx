@@ -8,7 +8,7 @@ const ShowTodo = ({todoList,setTodoList}) => {
     const fetchTodo = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:3000/api/v1/todo/showAllTodos",
+          "https://priority-pad-backend.onrender.com/api/v1/todo/showAllTodos",
           { withCredentials: true }
         );
         if(res.data.success)

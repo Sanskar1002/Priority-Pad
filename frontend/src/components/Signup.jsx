@@ -23,7 +23,7 @@ const Signup = () => {
   const handleSignup = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/v1/user/register",
+        "https://priority-pad-backend.onrender.com/api/v1/user/register",
         user,
         {
           headers: {

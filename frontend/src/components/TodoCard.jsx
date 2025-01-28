@@ -6,7 +6,7 @@ const TodoCard = ({ todo,todoList,setTodoList }) => {
   const handleDelete = async () => {
     try {
       const res = await axios.delete(
-        `http://localhost:3000/api/v1/todo/deleteTodo/${todo._id}`,
+        `https://priority-pad-backend.onrender.com/api/v1/todo/deleteTodo/${todo._id}`,
         { withCredentials: true }
       );
 

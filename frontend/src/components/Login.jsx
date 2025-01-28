@@ -24,7 +24,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/v1/user/login",
+        "https://priority-pad-backend.onrender.com/api/v1/user/login",
         user,
         {
           headers: {
