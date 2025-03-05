@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://priority-pad.onrender.com",
+    origin: "http://localhost:5175",
     credentials: true,
   })
 );

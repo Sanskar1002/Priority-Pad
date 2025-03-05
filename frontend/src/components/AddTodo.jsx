@@ -16,7 +16,7 @@ const TodoItems = ({ todoList, setTodoList }) => {
     // console.log(title, description);
     try {
       const res = await axios.post(
-        "https://priority-pad-backend.onrender.com/api/v1/todo/createTodo",
+        "http://localhost:8000/api/v1/todo/createTodo",
         { title, description },
         {
           headers: {
